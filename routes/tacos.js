@@ -6,7 +6,7 @@ const router = Router()
 
 //GETs
 router.get('/', tacosCtrl.index)
-
+router.get('/:tacoId', tacosCtrl.show)
 //POSTs
 router.post('/', isLoggedIn, tacosCtrl.create)
 
