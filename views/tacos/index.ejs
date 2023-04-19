@@ -4,6 +4,20 @@
 <section>
   <h1>Tacos</h1>
   <h2>All the Tacos!</h2>
+  <% if (user) { %>
+    <h2>Add a Taco!</h2>
+    <form action="/tacos" method="POST">
+      <label>
+        Name:
+        <input type="text" name="name" autocomplete="off">
+      </label>
+      <label>
+        Tasty?
+        <input type="checkbox" name="tasty">
+      </label>
+      <button type="submit">Add Taco</button>
+    </form>
+  <% } %>
   <ul>
     <% tacos.forEach(taco => { %>
       <li>🌮 <%= taco.name %> is <%= taco.tasty ? 'tasty' : 'not tasty' %></li>

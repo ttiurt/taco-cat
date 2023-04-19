@@ -16,8 +16,12 @@ function index(req, res){
   })
 }
 
-
+function create(req, res){
+  console.log('CREATING')
+  console.log(req.body)
+}
 
 export{
-  index
+  index,
+  create,
 }
