@@ -10,6 +10,9 @@ router.get('/:tacoId', tacosCtrl.show)
 //POSTs
 router.post('/', isLoggedIn, tacosCtrl.create)
 
+//PATCHs
+router.patch('/:tacoId/flip-tasty', isLoggedIn, tacosCtrl.flipTasty)
+
 export {
   router
 }

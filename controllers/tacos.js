@@ -47,8 +47,13 @@ function show(req, res){
   })
 }
 
+function flipTasty(req, res){
+
+}
+
 export{
   index,
   create,
   show,
+  flipTasty,
 }
